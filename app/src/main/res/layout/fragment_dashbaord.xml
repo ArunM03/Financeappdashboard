@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_savings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Financial Analysis"
+        app:layout_constraintBottom_toTopOf="@id/bt_event"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bt_savings"
+        app:layout_constraintBottom_toTopOf="@id/bt_household" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_household"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Household Stock"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_event"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

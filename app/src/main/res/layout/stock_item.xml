@@ -22,11 +22,12 @@
             android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold"
+
             app:layout_constraintTop_toTopOf="@id/iv_image"
             app:layout_constraintStart_toEndOf="@id/iv_image"
             app:layout_constraintEnd_toEndOf="parent"/>
     <TextView
-        android:id="@+id/tv_price"
+        android:id="@+id/tv_price_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Price"
@@ -35,7 +36,40 @@
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/tv_item_name"
         app:layout_constraintStart_toEndOf="@id/iv_image"
+        app:layout_constraintEnd_toStartOf="@id/tv_use_title"/>
+    <TextView
+        android:id="@+id/tv_use_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tv_item_name"
+        app:layout_constraintStart_toEndOf="@id/tv_price_title"
+        app:layout_constraintEnd_toStartOf="@id/tv_quantity_title"/>
+    <TextView
+        android:id="@+id/tv_quantity_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tv_item_name"
+        app:layout_constraintStart_toEndOf="@id/tv_use_title"
         app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tv_price_title"
+        app:layout_constraintStart_toEndOf="@id/iv_image"
+        app:layout_constraintEnd_toStartOf="@id/tv_use"/>
     <TextView
         android:id="@+id/tv_use"
         android:layout_width="wrap_content"
@@ -44,20 +78,21 @@
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/tv_item_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_price_title"
         app:layout_constraintStart_toEndOf="@id/tv_price"
-        app:layout_constraintEnd_toStartOf="parent"/>
+        app:layout_constraintEnd_toStartOf="@id/tv_quantity"/>
     <TextView
-        android:id="@+id/tv_price"
+        android:id="@+id/tv_quantity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Price"
+        android:text="Quantity"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/tv_item_name"
-        app:layout_constraintStart_toEndOf="@id/iv_image"
+        app:layout_constraintTop_toBottomOf="@id/tv_price_title"
+        app:layout_constraintStart_toEndOf="@id/tv_use"
         app:layout_constraintEnd_toEndOf="parent"/>
+
 
 
 
